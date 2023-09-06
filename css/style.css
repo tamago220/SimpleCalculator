@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+    background: #333;
+}
+
+body {
+    line-height: 1.75;
+    font-size: 16px;
+    color: #333;
+    /* background:#fff; */
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", Meiryo, sans-serif;
+}
+
+header {
+    padding: 16px 24px;
+    width: 40%;
+    margin: 0 30%;
+    background-color: #fafafa;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.header-logo {
+    font-weight: bold;
+    font-size: 43px;
+}
+
+p.GoogleFonts,
+body {
+    font-family: "Raleway", "BIZ UDPGothic", cursive;
+}
+p.GoogleFonts {
+    font-size: 10px;
+    margin: 3px;
+    width: 10%;
+}
+header {
+    background-color: white;
+}
+.contents {
+    text-align: center;
+}
+.buttons {
+    border: white 4px solid;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.buttons p {
+    font-size: 30px;
+}
+.bckG {
+    background-color: #333;
+    height: 600px;
+    display: flex;
+}
+.wrapper {
+    margin: auto;
+}
+.wrapper .calculator {
+    position: relative;
+    display: grid;
+    margin: auto;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0px 0px 40px 0px;
+    border: solid 5px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+.wrapper .calculator .result,
+.result2 {
+    grid-column: span 5;
+    height: 150px;
+    width: 376px;
+    text-align: right;
+    padding: 10px;
+    outline: none;
+    font-size: 30px;
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.wrapper .calculator span {
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 30px;
+    user-select: none;
+    border-bottom: 3px double rgba(255, 255, 255, 0.05);
+    border-right:double 5px  rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.wrapper .calculator span:hover {
+    transition: 100ms;
+    background: rgba(225,225,225,0.05);
+}
+.wrapper .calculator span:active {
+    background: #fafafaa6;
+    transition: 200ms;
+    color: #192f00;
+    /* font-size: 34px; */
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.wrapper .calculator span{
+    transition:400ms;
+}
+.wrapper .calculator .clear {
+    grid-column: span 2;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 0, 0, 0.35);
+}
+.wrapper .calculator .plus {
+    grid-row: span 2;
+    height: 150px;
+}
+
+.wrapper .calculator .equal {
+    background: rgba(39, 186, 255, 0.382);
+    font-size: 40px;
+    grid-column: span 2;
+    width:150px;
+}
+
+
+
+.bckG { 
+    margin-top: 10px;
+}
+
+
+.use {
+    font-weight: bold;
+    font-size: 17px;
+    color: #333;
+    border-radius: 10px;
+    margin-left: -380px;
+    margin-right: 50px;
+    margin-top: -10px;
+    margin-bottom: -100px;
+    background: #fafafa;
+    padding: 30px;
+}
+
+.use span{
+    font-size: 27px;
+    border: solid 1px;
+    border-right: double 4px;
+    border-bottom: double 4px;
+    border-radius: 20px 50px;
+    margin: 20%;
+    padding: 20px;
+}
+
+.scroll {
+    font-size: 10px;
+    color: white;
+}
+/*  レスポンシブ対応*/
+@media screen and (max-width: 1250px) {
+    
+    .header-logo {
+        margin-top: -10px;
+        font-size: 40px;
+    }
+    
+    .use{
+        display: none;
+    }
+    ::selection{
+        background:none ;
+    }
+}
+@media screen and (max-width: 778px) {
+    .header-logo {
+        margin-top: -10px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    
+    .header-logo {
+        margin-top: 0px;
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+    .bckG{
+        scale: 0.7;
+        margin-top: -100px;
+    }
+}

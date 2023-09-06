@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="format-detection" content="email=no,telephone=no,address=no">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <br>
+    <header>
+        <div>
+            <h1 class="header-logo">SimpleCalculator</h1>
+        </div>
+    </header>
+    <br>
+    <div class="bckG">
+        <div class="wrapper">
+            <form class="calculator" name="calc">
+                <input type="text" readonly class="result" name="txt">
+                <span class="num clear" onclick="calc.txt.value = ''">C</span>
+                <span class="num" onclick="document.calc.txt.value +='/'">÷</span>
+                <span class="num" onclick="document.calc.txt.value +='*'">x</span>
+                <span class="num" onclick="document.calc.txt.value +='-'">-</span>
+                <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+                <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+                <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+                <span class="num dot" onclick="document.calc.txt.value +='.'">・</span>
+                <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
+                <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+                <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+                <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+                <span class="num" onclick="document.calc.txt.value *= 0.01">%</span>
+                <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+                <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+                <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+                <span class="num" onclick="document.calc.txt.value +='('">(</span>
+                <span class="num" onclick="document.calc.txt.value +=')'">)</span>
+                <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+                <span class="num" onclick="document.calc.txt.value +='00'">00</span>
+                <span class="num" onclick="document.calc.txt.value *= Math.PI">π</span>
+                <span class="num equal" onclick="calculate()">=</span>
+            </form>
+            
+        </div>
+        <p class="use"><span>使い方</span><br><br>
+            ÷,x,+,-を使う時は2回連続で使わない<br>
+            例<br>❌ 1+x2 や 1++2<br>⭕️ 1x2 や 1+2 <br><br>
+            %は「x0.01」しているので<br>
+            連続で使用することができます <br>
+            ↑πも同じです<br><br>
+            累乗の計算をすることもできます<br>
+            例:7の3乗の場合<br>
+            ↓<br>
+            7**3
+        </p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+<br>
+
+</html>
